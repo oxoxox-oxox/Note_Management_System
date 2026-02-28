@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundamental Calculus Notes - Note Management System</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../JavaScript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../main_page.html">Back to Home</a></li>
+                    <li><a href="#upload">Upload Notes</a></li>
+                </ul>
+            </nav>
+            <h1 id="main_head">Foundamental Calculus Notes</h1>
+            <p>Calculus notes and resources</p>
+        </header>
+
+        <main>
+            <section id="upload">
+                <h2>Upload Calculus Notes</h2>
+                <div class="form-card">
+                    <form class="subject-upload-form" data-subject="calculus">
+                        <label for="calculusFile">Select Calculus PDF:</label>
+                        <input type="file" id="calculusFile" name="calculusFile" accept=".pdf" required>
+                        <button type="submit">Upload Calculus Note</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="notes-list">
+                <h2>Calculus Notes List</h2>
+                <div class="form-card">
+                    <ul>
+                        <li>
+                            <h3>Calculus I</h3>
+                            <p>Introduction to differential calculus</p>
+                            <a href="#">Download</a>
+                        </li>
+                        <li>
+                            <h3>Calculus II</h3>
+                            <p>Integral calculus and applications</p>
+                            <a href="#">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Note Management System &copy; 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>

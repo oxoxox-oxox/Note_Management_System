@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Notes - Note Management System</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../JavaScript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../main_page.html">Back to Home</a></li>
+                    <li><a href="#upload">Upload Notes</a></li>
+                </ul>
+            </nav>
+            <h1 id="main_head">Python Notes</h1>
+            <p>Python programming notes and resources</p>
+        </header>
+
+        <main>
+            <section id="upload">
+                <h2>Upload Python Notes</h2>
+                <div class="form-card">
+                    <form class="subject-upload-form" data-subject="python">
+                        <label for="pythonFile">Select Python PDF:</label>
+                        <input type="file" id="pythonFile" name="pythonFile" accept=".pdf" required>
+                        <button type="submit">Upload Python Note</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="notes-list">
+                <h2>Python Notes List</h2>
+                <div class="form-card">
+                    <ul>
+                        <li>
+                            <h3>Python Basics</h3>
+                            <p>Introduction to Python programming</p>
+                            <a href="#">Download</a>
+                        </li>
+                        <li>
+                            <h3>Python Advanced</h3>
+                            <p>Advanced Python concepts and techniques</p>
+                            <a href="#">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Note Management System &copy; 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>

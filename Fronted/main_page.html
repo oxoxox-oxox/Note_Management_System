@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Management System</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="JavaScript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <!-- Navigation items will be added here -->
+                </ul>
+            </nav>
+            <h1 id="main_head" style="text-align: center;">Note Management System</h1>
+            <p style="text-align: center;">Specialed for managing your notes efficiently</p>
+        </header>
+
+        <main>
+            <section id="subjects">
+                <h1 style="text-align: center;">Subject Notes</h1>
+                <div class="form-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Upload Date</th>
+                                <th>Action</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="subject/Foundamental_Calculus.html" class="subject-link">Foundamental
+                                        Calculus</a></td>
+                                <td>2023-10-01</td>
+                                <td><a href="subject/Foundamental_Calculus.html">See Notes</a></td>
+                                <td><button>Download</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="subject/OCSb.html" class="subject-link">OCSb</a></td>
+                                <td>2023-10-01</td>
+                                <td><a href="subject/OCSb.html">See Notes</a></td>
+                                <td><button>Download</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="subject/Latex.html" class="subject-link">Latex</a></td>
+                                <td>2023-10-01</td>
+                                <td><a href="subject/Latex.html">See Notes</a></td>
+                                <td><button>Download</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="subject/ESAC.html" class="subject-link">ESAC</a></td>
+                                <td>2023-10-01</td>
+                                <td><a href="subject/ESAC.html">See Notes</a></td>
+                                <td><button>Download</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="subject/python.html" class="subject-link">Python</a></td>
+                                <td>2023-10-01</td>
+                                <td><a href="subject/python.html">See Notes</a></td>
+                                <td><button>Download</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="upload">
+                <h2>Upload Notes</h2>
+                <div class="form-card">
+                    <form id="upload-form" enctype="multipart/form-data">
+                        <label for="pdfFile">Select PDF:</label>
+                        <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+                        <label for="subject">Select Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="calculus">Foundamental Calculus</option>
+                            <option value="ocsb">OCSb</option>
+                            <option value="latex">Latex</option>
+                            <option value="esac">ESAC</option>
+                            <option value="python">Python</option>
+                        </select>
+                        <button type="submit">Upload</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="calculus-section" class="subject-section">
+                <h2>Foundamental Calculus</h2>
+                <div class="form-card">
+                    <p>Calculus notes and resources</p>
+                    <!--contents-->>
+                </div>
+            </section>
+            <section id="ocsb-section" class="subject-section">
+                <h2>OCSb Notes</h2>
+                <div class="form-card">
+                    <p>OCSb notes and resources</p>
+                    <!-- Add OCSb-specific content here -->
+                </div>
+            </section>
+
+            <section id="latex-section" class="subject-section">
+                <h2>Latex Notes</h2>
+                <div class="form-card">
+                    <p>Latex notes and resources</p>
+                    <!-- Add Latex-specific content here -->
+                </div>
+            </section>
+
+            <section id="esac-section" class="subject-section">
+                <h2>ESAC Notes</h2>
+                <div class="form-card">
+                    <p>ESAC notes and resources</p>
+                    <!-- Add ESAC-specific content here -->
+                </div>
+            </section>
+
+            <section id="python-section" class="subject-section">
+                <h2>Python Notes</h2>
+                <div class="form-card">
+                    <p>Python notes and resources</p>
+                    <!-- Add Python-specific content here -->
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About This System</h2>
+                <div class="form-card">
+                    <p>
+                        This is a Note Management System for users to manage their notes more easily.
+                    </p>
+                    <p>
+                        It allows users to upload their notes in PDF format and organize them by subject.
+                        Users can view, download, and manage their notes easily.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p style="text-align: center;">oxoxox-oxox &copy; 2023</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
