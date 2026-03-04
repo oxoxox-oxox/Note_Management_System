@@ -1,8 +1,20 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+
 /*container style*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 nav ul {
@@ -10,27 +22,426 @@ nav ul {
     justify-content: center;
     gap: 20px;
     list-style: none;
-    padding: 10px 0;
+    padding: 20px 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #667eea;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background: transparent;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 /*form card style*/
 .form-card {
-    background: #3881e1;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+    /* 增加内部填充 */
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+/* 增加表单元素间距 */
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* 增加表单项之间的垂直间距 */
+}
+
+/* 增加标签和输入框的间距 */
+.form-card label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* 增加按钮与其他元素的间距 */
+.form-card button[type="submit"] {
+    margin-top: 15px;
+}
+
+/* 如果是表格，增加表格与标题的间距 */
+.form-card table {
+    margin-top: 20px;
+}
+
+/* 增加列表项间距 */
+.form-card ul li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.form-card ul li:last-child {
+    border-bottom: none;
+}
+
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.subject-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* 主题表格中的按钮样式 */
+.subject-table td button {
+    padding: 12px 25px;
+    margin: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 600px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.subject-table td button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+/* 增加表格单元格的内边距 */
+.subject-table td {
+    padding: 25px 20px;
+    vertical-align: middle;
+}
+
+/* 如果单元格中有多个元素，增加间距 */
+.subject-table td>* {
+    margin: 5px 0;
+}
+
+.subject-table tr {
+    transition: all 0.3s ease;
+}
+
+.subject-table tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+}
+
+.subject-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+button[type="submit"],
+.subject-link {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    text-decoration: none;
+    display: inline-block;
+}
+
+button[type="submit"]:hover,
+.subject-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+button[type="submit"]:active,
+.subject-link:active {
+    transform: translateY(0);
+}
+
+button[type="submit"]:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#main_head {
+    font-size: 42px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+input[type="file"],
+input[type="text"],
+select {
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 16px;
+}
+
+h1,
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 淡入动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-card,
+header,
+section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* 悬停效果 */
+.subject-link,
+button {
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    .container {
+        padding: 20px 15px;
     }
 
     .form-card {
-        padding: 20px;
-        margin: 20px;
+        padding: 25px;
+        margin: 20px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #main_head {
+        font-size: 32px;
+    }
+
+    .subject-table {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .subject-table th,
+    .subject-table td {
+        padding: 10px;
+    }
+
+    .subject-table td button {
+        padding: 10px 20px;
+        margin: 5px;
+    }
+}
+
+/* Subject Notes 区域整体居中 */
+#subjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subjects h1 {
+    text-align: center;
+    width: 100%;
+}
+
+#subjects .form-card {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+}
+
+/* 表格样式 */
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* 表头 */
+.subject-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 18px 15px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* 单元格 */
+.subject-table td {
+    padding: 25px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* 第一列 - 科目名称（胶囊状按钮） */
+.subject-table td:first-child {
+    text-align: center;
+}
+
+.subject-table td:first-child a.subject-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    min-width: 150px;
+}
+
+.subject-table td:first-child a.subject-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* 偶数行背景色 */
+.subject-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* 悬停效果 */
+.subject-table tr:hover {
+    background-color: #f0f0f5;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* 下载按钮 */
+.subject-table td button {
+    padding: 12px 30px;
+    margin: 5px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.subject-table td button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+/* Action 列链接 */
+.subject-table td:nth-child(3) a {
+    color: #667eea;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.subject-table td:nth-child(3) a:hover {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .subject-table td:first-child a.subject-link {
+        padding: 12px 25px;
+        font-size: 14px;
+        min-width: 120px;
     }
 }
